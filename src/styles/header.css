@@ -1,0 +1,114 @@
+.main-header {
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner-container{
+  width: 100%;
+  padding: 0 30px;
+}
+
+.header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  min-height: 4rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.logo-container:hover {
+  transform: translateY(-2px);
+}
+
+.logo-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  margin-right: 0.75rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nursery-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.025em;
+}
+
+.nursery-slogan {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.cart-button-base {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cart-button-base:hover {
+  background-color: white;
+  color: #16a34a;
+  border-color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cart-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.cart-quantity-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
